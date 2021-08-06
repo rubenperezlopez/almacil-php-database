@@ -4,7 +4,7 @@
  * Database.php
  *
  *
- * @category   Database
+ * @category   PHP Database
  * @author     Rubén Pérez López
  * @date       10/03/2019
  * @copyright  2018 Rubén Pérez López
@@ -13,7 +13,7 @@
  * @link       www.rubenperezlopez.com
  */
 
-namespace Almacil\Database;
+namespace Almacil;
 
 class Database
 {

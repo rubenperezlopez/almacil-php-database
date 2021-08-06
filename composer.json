@@ -1,15 +1,14 @@
 {
-    "name": "almacil/database",
+    "name": "almacil/php-database",
     "description": "A simple flat file database designed to persist data using just PHP and flat files. Perfect solution when no other database is available or for small projects.",
     "type": "library",
     "require": {
-        "php": ">=7.0.0",
-        "composer-runtime-api": "^2.0"
+        "php": ">=7.0.0"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Almacil\\Database\\": "src/"
+            "Almacil\\": "src"
         }
     },
     "authors": [
