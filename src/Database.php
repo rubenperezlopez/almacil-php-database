@@ -85,7 +85,7 @@ class Database
 		if ($documento->_id != '') {
 			$viene_con_id = true;
 		} else {
-			$documento->_id = $this->newid(64);
+			$documento->_id = $this->newid(32);
 		}
 
 		// Comprobar si ya hay un documento con ese _id
@@ -211,8 +211,8 @@ class Database
 	public function drop($coleccion) {
 		@unlink($this -> dbDIR . $coleccion . '.' . $this -> dbEXT);
 	}
-	public function newid($len = 64, $charSet = '') {
-		if ($len == '') $len = 64;
+	public function newid($len = 32, $charSet = '') {
+		if ($len == '') $len = 32;
 		if ($charSet == '') $charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 		$randomString = '';
 		$max = strlen($charSet) - 1;
